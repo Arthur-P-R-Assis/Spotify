@@ -1,0 +1,100 @@
+body {
+    background-image:linear-gradient(
+        rgb(59,88,93),
+        rgb(29,40,42)
+        );
+    
+    height:auto;
+    color:white;
+    font-family:sans-serif;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+buttom{
+    background-color: inherit;
+    border: none;
+}
+
+#cover {
+    width: 350px;
+    height: 350px; 
+    margin-bottom: 40px; 
+}
+
+.light-color{
+    color: rgb(139,153,156);
+}
+
+#below-cover, #progress-bar, #buttom-container {
+    width: 100%; 
+    max-width: 350px; 
+    margin: 5px 0; 
+}
+
+
+#below-cover{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#menor{
+    font-size: 12px;
+}
+
+#progress-bar {
+    background-color: rgb(139,153,156);
+    height: 3px;
+    width: 100%;
+    text-align: center;
+    border-radius: 15px;
+    cursor: pointer;
+
+}
+
+#current-progress{
+    --progress:0%;
+    background-color: white;
+    height: inherit;
+    width: var(--progress);
+    border-radius: inherit;
+
+}
+
+#timebox{
+    font-size: 10px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 350px; 
+    justify-content: space-between;
+}
+
+#buttom-container{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.buttom{
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.buttom-navigate{
+    font-size: 3em;
+}
+
+.buttom-biggest{
+    font-size: 4em;
+}
+
+.buttom-activated{
+    color: rgb(26, 209, 26);
+}
